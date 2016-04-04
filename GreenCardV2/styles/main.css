@@ -298,6 +298,7 @@
 }
 
 
+
 /* START_CUSTOM_CODE_kendoUiMobileApp */
 
 
@@ -305,3 +306,139 @@
 
 
 /* END_CUSTOM_CODE_kendoUiMobileApp */
+
+@font-face {
+   font-family: 'sukhumvitlight';
+      src: url('sukhumvitlight-webfont.eot');
+      src: url('sukhumvitlight-webfont.eot?#iefix') format('embedded-opentype'),
+           url('sukhumvitlight-webfont.woff') format('woff'),
+           url('sukhumvitlight-webfont.ttf') format('truetype');
+
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'sukhumvitreg';
+      src: url('sukhumvitreg-webfont.eot');
+      src: url('sukhumvitreg-webfont.eot?#iefix') format('embedded-opentype'),
+           url('sukhumvitreg-webfont.woff') format('woff'),
+           url('sukhumvitreg-webfont.ttf') format('truetype');
+
+   font-weight: normal;
+   font-style: normal;
+}
+
+.message {
+
+     
+    /*color: #ffffff;*/
+    text-align: center;
+}
+.h1{
+    font-weight: bold;
+    font-size:1.8em;
+}
+
+p {
+   font-family: 'sukhumvitreg', arial, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.form_reg {
+    font-size: 18;
+    /*color: #ffffff;*/
+}
+
+
+.bt_proid
+{
+    width: 50%; 
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.div100{
+    height:100vh;
+    width: 100%; 
+    
+}
+.bgcolor{
+    background-color: #fff;
+}
+.logo{
+    margin:2em auto 0em auto;
+    display:block;
+    width: 44%; 
+    height: auto;
+}
+.logoline{
+    margin:0em auto 0em auto;
+    display:block;
+    width: 33%; 
+    height: auto;
+}
+
+.clock { position: absolute; top: 280px; left: 40vw; }
+.clock-container { position: relative;}
+.clock-12 { position: absolute; top: -125px; left: 0px; }
+.clock-1 { position: absolute; top: -108.25px; left: 62.5px; }
+.clock-2 { position: absolute; top: -62.5px; left: 108.25px; }
+.clock-3 { position: absolute; top: 0px; left: 125px; }
+.clock-4 { position: absolute; top: 62.5px; left: 108.25px; }
+.clock-5 { position: absolute; top: 108.25px; left: 62.5px; }
+.clock-6 { position: absolute; top: 125px; left: 0px; }
+.clock-7 { position: absolute; top: 108.25px; left: -62.5px; }
+.clock-8 { position: absolute; top: 62.5px; left: -108.25px; }
+.clock-9 { position: absolute; top: 0px; left: -125px; }
+.clock-10 { position: absolute; top: -62.5px; left: -108.25px; }
+.clock-11 { position: absolute; top: -108.25px; left: -62.5px;}
+.clock-text { position: absolute; top: 300px; left: 50%; transform: translate(-50%, 0); text-align: center; font-weight: bold; font-size: 20px; }
+.btn-category-cancel { margin-top: 330px; margin-left: auto; margin-right: auto;}
+
+
+@media(min-width:36em) {
+    .h1{
+        font-size:2.5em;
+    }
+	.clock { top: 300px; left: 45vw; }
+	.clock-12 { top: -180px; left: 0px; }
+	.clock-1 { top: -155.88px; left: 90px; }
+	.clock-2 { top: -90px; left: 155.88px; }
+	.clock-3 { top: 0px; left: 180px; }
+	.clock-4 { top: 90px; left: 155.88px; }
+	.clock-5 { top: 155.88px; left: 90px; }
+	.clock-6 { top: 180px; left: 0px; }
+	.clock-7 { top: 155.88px; left: -90px; }
+	.clock-8 { top: 90px; left: -155.88px; }
+	.clock-9 { top: 0px; left: -180px; }
+	.clock-10 { top: -90px; left: -155.88px; }
+	.clock-11 { top: -155.88px; left: -90px;}
+    .clock-text { position: absolute; top: 300px; left: 35%; transform: translate(-50%, 0); font-size: 30px; }
+    .btn-category-cancel { margin-top: 500px;}
+}
+
+/*
+@media(min-width: 50em) {
+    .h1{
+    font-size:4em;
+    }
+			.clock { top: 300px; left: 48vw; }
+			.clock-12 { top: -300px; left: 0px; }
+			.clock-1 { top: -259.81px; left: 150px; }
+			.clock-2 { top: -150px; left: 259.81px; }
+			.clock-3 { top: 0px; left: 300px; }
+			.clock-4 { top: 150px; left: 259.81px; }
+			.clock-5 { top: 259.81px; left: 150px; }
+			.clock-6 { top: 300px; left: 0px; }
+			.clock-7 { top: 259.81px; left: -150px; }
+			.clock-8 { top: 150px; left: -259.81px; }
+			.clock-9 { top: 0px; left: -300px; }
+			.clock-10 { top: -150px; left: -259.81px; }
+			.clock-11 { top: -259.81px; left: -150px;}
+            .clock-text { position: absolute; top: 300px; left: 30%; transform: translate(-50%, 0); font-size: 30px; }
+            .btn-category-cancel { margin-top: 720px;}
+}
+*/
