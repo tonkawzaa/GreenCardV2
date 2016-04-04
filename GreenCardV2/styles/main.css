@@ -117,9 +117,12 @@
     vertical-align: middle;
 }
 
+
 #kendoUiMobileApp.km-nova p {
     margin-left: 1rem;
     margin-right: 1rem;
+  
+    
 }
 
 #kendoUiMobileApp.km-nova span.km-switch {
@@ -213,7 +216,18 @@
 /* primary buttons */
 
 #kendoUiMobileApp.km-flat .button-group .km-button.primary {
-    background-color: #10c4b2;
+   /* background-color: #10c4b2;*/
+    background-image: url('../images/button-green-bg-large.png');
+    background-size: 100% 100%;
+    border-color: transparent;
+    font-family: 'sukhumvitreg', arial, sans-serif;
+}
+#kendoUiMobileApp.km-flat .button-group .km-button.primary2 {
+ 
+    background-image: url('../images/button-red-bg-small.png');
+    background-size: 100% 100%;
+    border-color: transparent;
+    font-family: 'sukhumvitreg', arial, sans-serif;
 }
 
 #kendoUiMobileApp.km-nova .button-group .km-button.primary {
@@ -222,7 +236,9 @@
 }
 
 #kendoUiMobileApp.km-flat .button-group .km-button.primary {
-    color: #ffffff;
+    font-family: 'sukhumvitreg', arial, sans-serif;
+    color: #000000;
+    
 }
 
 #kendoUiMobileApp.km-ios7 .button-group .km-button.primary {
@@ -334,14 +350,36 @@
      
     /*color: #ffffff;*/
     text-align: center;
+    
 }
 .h1{
     font-weight: bold;
-    font-size:1.8em;
+    font-size: 2em;
+}
+.h2{
+    font-weight: bold;
+    font-size: 1.7em;  
 }
 
 p {
    font-family: 'sukhumvitreg', arial, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+    
+}
+text {
+   font-family: 'sukhumvitreg', arial, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+    
+}
+input{
+     border:0px;
+     width:80%;
+}
+
+span{
+    font-family: 'sukhumvitreg', arial, sans-serif;
    font-weight: normal;
    font-style: normal;
 }
@@ -365,6 +403,18 @@ p {
     width: 100%; 
     
 }
+.divmain{
+    margin:3em 1em ;
+    height:90vh;
+    width: auto;
+    background-color: #fff;
+}
+.divmain_reigister{
+    margin:6em 1em ;
+    height:84vh;
+    width: auto;
+    background-color: #fff;
+}
 .bgcolor{
     background-color: #fff;
 }
@@ -374,12 +424,83 @@ p {
     width: 44%; 
     height: auto;
 }
-.logoline{
-    margin:0em auto 0em auto;
+.logoline{ 
+    margin:0em auto ;
     display:block;
     width: 33%; 
     height: auto;
 }
+.logo_reigister{
+    margin:1em auto 0em auto;
+    display:block;
+    width: 37%; 
+    height: auto;
+    position: absolute; 
+    top: 0%; 
+    left: 32%;
+}
+.div_dot{
+    margin:6em auto 0px auto;
+    display:block;
+    width: 60px;
+}
+    .button_dot{
+        width: 1em; 
+        height: auto;
+    }
+.from_table_signin{
+    width: 75%;
+    margin:4em auto 0em auto;
+    display:block;
+}
+.from_table_signin_child{
+    width: 75%;
+    margin:1em auto 0em auto;
+    display:block;
+}
+.right{
+    float:right;
+}
+.center{
+    margin:0em auto 0em auto;
+    display:block;
+}
+.from_center{
+    width: 75%;
+    margin:0em auto 0em auto;
+ 
+}
+.tdwidth{
+    width:100%;
+}
+.from_bg{
+    background-image: url('../images/button-green-outline.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.icon_in_from{
+    margin:0.3em 0.3em ;
+    width: 2em;
+    height: auto;
+}
+span.k-widget.k-tooltip-validation {
+                    
+                    width: 160px;
+                    text-align: left;
+                    border: 0;
+                    padding: 0;
+                    margin: 0;
+                    background: none;
+                    box-shadow: none;
+                    color: red;
+                }
+.datarootbottom{
+    position: absolute; 
+    bottom: 1px; 
+    left: 20%; 
+    width:80%;
+}
+
 
 .clock { position: absolute; top: 280px; left: 40vw; }
 .clock-container { position: relative;}
@@ -400,8 +521,29 @@ p {
 
 
 @media(min-width:36em) {
+    .divmain_reigister{
+        margin:8em 1em ;
+        height:82vh;        
+    }
+    .logo_reigister{
+        left: 30%;
+    }
+    .div_dot{
+    margin:8em auto 0px auto;        
+    }
+
     .h1{
         font-size:2.5em;
+    }
+    .h2{
+        font-weight: bold;
+        font-size: 2em;  
+    }
+    .datarootbottom{
+        left: 30%; 
+    }
+     p{
+        font-size: 1.2em; 
     }
 	.clock { top: 300px; left: 45vw; }
 	.clock-12 { top: -180px; left: 0px; }
@@ -419,7 +561,6 @@ p {
     .clock-text { position: absolute; top: 300px; left: 35%; transform: translate(-50%, 0); font-size: 30px; }
     .btn-category-cancel { margin-top: 500px;}
 }
-
 /*
 @media(min-width: 50em) {
     .h1{

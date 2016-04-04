@@ -9,6 +9,7 @@
         $(function() {
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 skin: 'flat',
+                transition: "overlay",
                 initial: 'components/homeView/view.html'
             });
         });

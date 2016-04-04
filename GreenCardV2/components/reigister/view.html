@@ -1,0 +1,46 @@
+<div data-role="view" data-title="" data-layout="main" data-model="app.reigister" data-show="app.reigister.onShow" data-after-show="app.reigister.afterShow" >
+   
+   <div class="signup1-view">
+       
+       <div id="reigisterModel1logo" >
+        <img src="images/icon-user-large.png"  class="logo_reigister" >
+       </div>
+
+   
+        <div id="reigisterModel1" class="divmain_reigister">
+        <table></table>
+            <div class="div_dot">
+                <img src="images/button-dot-green-bg.png" class="button_dot">
+                <img src="images/button-dot-green-outline.png" class="button_dot" >
+                <img src="images/button-dot-green-outline.png" class="button_dot" >
+            </div>
+         <div id="signup1_form" data-role="validator" novalidate="novalidate">
+            <form>
+                <table  border="1" class="message" >
+                   <tr>
+                       <td>
+                            <p>
+                                อีเมล์
+                            </p>
+                        </td>
+                       <td>
+                          <input id="signupemail" name="signupemail"  style="width:80%;"class="form_reg" data-bind="value: reigisterModel.fields.email" required validationMessage="***" placeholder="อีเมล์ของคุณ" type="email">
+                           <span class="k-invalid-msg" data-for="signupemail"></span>
+                       </td>
+                   </tr>
+                   <tr>
+                        <td colspan="2" >
+                            <img  src="images/pic-green-line.jpg" style="margin:0px auto;display:block;width: 90%; height: auto;" />
+                        </td>
+                   </tr>
+                  
+                </table>
+            </form>
+
+         </div>
+        </div>
+       
+       
+   </div> 
+     
+</div>

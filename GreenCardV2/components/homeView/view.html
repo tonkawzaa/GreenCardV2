@@ -3,13 +3,64 @@
         <table></table>
         
             <img src="images/logo-green-card.png" alt="Green card logo" class="logo">
-            <p class="message h1">
+            <span class="message h1 center" >
                 แอปเดียวเขียวทั่วไทย
-            </p>
+            </span>
             <img src="images/pic-green-line.jpg"  class="logoline">
         
-         
+        <div id="homeViewModel" data-role="validator" novalidate="novalidate" >
+            <form>
+             <table class="from_table_signin from_bg" >
+                 <tr>
+                     <td >
+                         <img src="images/icon-user-small.png" class="icon_in_from" >
+                     </td>
+                     <td class="tdwidth" > 
+                         <input id="signinemail" name="signinemail" data-bind="value: homeViewModel.fields.email"  required validationMessage="***" placeholder="อีเมล์ของคุณ" type="email">
+                         <span class="k-invalid-msg" data-for="signinemail"></span>
+                     </td>
+                 </tr>
+             </table>
+            
+            <table class="from_table_signin_child from_bg " >
+                 <tr>
+                     <td>
+                         <img src="images/icon-password-small.png" class="icon_in_from" >
+                     </td>
+                     <td class="tdwidth">
+                         <input id="signinpassword" name="signinpassword"  data-bind="value: homeViewModel.fields.password" required validationMessage="***" placeholder="รหัสผ่าน" type="password">
+                          <span class="k-invalid-msg" data-for="signinpassword"></span>
+                     </td>
+                 </tr>
+             </table>
+             </form>
+             <div class="button-group logoline  " style="width:80%;" >
+                <a  class="primary" data-role="button" data-bind="events: { click: homeViewModel.submit }">เข้าสู่ระบบ</a>
+             </div>
+        </div>
+        <table class=" from_center "  >
+                 <tr>
+                     <td>
+                         <span data-bind="events: { click: homeViewModel.gotermofuse }">
+                             ลงทะเบียนใช้งานที่นี่
+                         </span>
+                     </td>
+                     <td class="right" >
+                         <a  href="https://green.odooportal.com/web/reset_password" data-rel="external" target="_blank">
+                             <span>
+                                 ลืมรหัสผ่าน
+                             </span>
+                         </a>
+                     </td>
+                 </tr>
+             </table>
         
+        <a  href="http://dataroot.asia/" data-rel="external" target="_blank">
+        <span class="datarootbottom">
+            แอปพลิเคชันโดยบริษัทดาต้ารูท เอเชีย จำกัด
+        </span>
+        </a>
     </div>
+        
     
 </div>
