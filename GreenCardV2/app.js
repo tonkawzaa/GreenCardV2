@@ -7,10 +7,23 @@
 
     var bootstrap = function() {
         $(function() {
+              var token,page_start;
+            token = null;
+        	token = localStorage.getItem("token");
+            
+            
+            
+            if(token != null){
+            	page_start = 'components/welcome/view.html';
+            }else{
+               	page_start = 'components/home/view.html';
+                   // page_start = 'components/earnbyid/view.html';
+             };
+            
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 skin: 'flat',
                 transition: "overlay",
-                initial: 'components/homeView/view.html'
+                initial: page_start,
             });
         });
     };

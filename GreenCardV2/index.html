@@ -14,6 +14,7 @@
 </head>
 
 <body id="kendoUiMobileApp">
+    <script src="components/welcome/index.js"></script>
     <script src="components/reigister/index.js"></script>
     <script src="components/homeView/index.js"></script>
     <script src="components/termsofuse/index.js"></script>
@@ -36,15 +37,19 @@
         </header>
     </div>
 
-    <div id="appDrawer" data-role="drawer" data-title="Navigation">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-            </div>
-        </header>
-        <ul id="navigation-container" data-role="listview">
-            <li><a href="components/homeView/view.html" data-icon="home">Home View</a></li>
-        </ul>
+    <div id="appDrawer" data-role="drawer"  class="drawerwidth" data-swipe-to-open="false" data-model="app.welcome">
+        <div id="navigation-container" class="drawermenu">
+            <img src="imagesDrawer/01-menu.jpg" class="drawercontainer"> 
+             <a href="#components/welcome/view.html"> 
+                 <img src="imagesDrawer/02-home.jpg" class="drawercontainer"> 
+             </a>
+            <img src="imagesDrawer/03-user.jpg" class="drawercontainer"> 
+            <img src="imagesDrawer/04-my-point.jpg" class="drawercontainer"> 
+            <img src="imagesDrawer/05-howto.jpg" class="drawercontainer"> 
+            <img src="imagesDrawer/06-news.jpg" class="drawercontainer"> 
+            <img src="imagesDrawer/07-setting.jpg" class="drawercontainer"> 
+            <img src="imagesDrawer/08-log-out.jpg" class="drawercontainer"> 
+        </div>
     </div>
     <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->

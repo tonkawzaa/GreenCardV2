@@ -2,12 +2,10 @@
    
    <div class="signup1-view">
        
-       <div id="reigisterModel1logo" >
-        <img src="images/icon-user-large.png"  class="logo_reigister" >
-       </div>
+       
 
    
-        <div id="reigisterModel1" class="divmain_reigister">
+        <div id="reigisterModel1" class="divmain_reigister clock-container">
         <table></table>
             <div class="div_dot">
                 <img src="images/button-dot-green-bg.png" class="button_dot">
@@ -16,7 +14,7 @@
             </div>
          <div id="signup1_form" data-role="validator" novalidate="novalidate">
             <form>
-                <table  border="1" class="message" >
+                <table  >
                    <tr>
                        <td>
                             <p>
@@ -24,23 +22,159 @@
                             </p>
                         </td>
                        <td>
-                          <input id="signupemail" name="signupemail"  style="width:80%;"class="form_reg" data-bind="value: reigisterModel.fields.email" required validationMessage="***" placeholder="อีเมล์ของคุณ" type="email">
+                          <input id="signupemail" name="signupemail"  class="form_reg" data-bind="value: reigisterModel.fields.email" required validationMessage="***" placeholder="อีเมล์ของคุณ" type="email">
                            <span class="k-invalid-msg" data-for="signupemail"></span>
                        </td>
                    </tr>
                    <tr>
+                        <td colspan="2"  >
+                            <img  src="images/pic-green-line.jpg" class="fromsline" />
+                        </td>
+                   </tr>
+                   <tr>
+                       <td>
+                            <p>
+                                รหัสผ่าน
+                            </p>
+                        </td>
+                       <td>
+                          <input id="signuppassword1" name="signuppassword1"  class="form_reg" data-bind="value: reigisterModel.fields.password1" required validationMessage="***" placeholder="รหัสผ่าน" type="password">
+                          <span class="k-invalid-msg" data-for="signuppassword1"></span>
+                       </td>
+                   </tr>
+                   <tr>
                         <td colspan="2" >
-                            <img  src="images/pic-green-line.jpg" style="margin:0px auto;display:block;width: 90%; height: auto;" />
+                            <img  src="images/pic-green-line.jpg" class="fromsline" />
+                        </td>
+                   </tr>
+                   <tr>
+                       <td>
+                            <p>
+                                ยืนยันรหัสผ่าน
+                            </p>
+                        </td>
+                       <td>
+                          <input id="signupconfirmpassword" name="signupconfirmpassword"  class="form_reg" data-bind="value: reigisterModel.fields.confirmpassword" required validationMessage="***" placeholder="ยืนยันรหัสผ่าน" type="password">
+                          <span class="k-invalid-msg" data-for="signupconfirmpassword"></span>
+                       </td>
+                   </tr>
+                   <tr>
+                        <td colspan="2" >
+                            <img  src="images/pic-green-line.jpg" class="fromsline" />
                         </td>
                    </tr>
                   
                 </table>
             </form>
-
          </div>
+            
+            <div class="button-group bottom_position"  >
+                <a class="primary" data-role="button" data-bind="events: { click: reigisterModel.toggleView }">ถัดไป</a>
+                <a  class="primary2"data-role="button" data-bind="events: { click: reigisterModel.termofuse }"  >ย้อนกลับ</a>
+            </div>
         </div>
+       
+       <div id="reigisterModel1logo" >
+        <img src="images/icon-user-large.png"  class="logo_reigister" >
+       </div>
        
        
    </div> 
+   
+    <!----------------- signup2-view  -------->
+    <div  class="signup2-view" style="display:none;">
+        
+
+   
+        <div id="reigisterModel2" class="divmain_reigister clock-container">
+        <table></table>
+            <div class="div_dot">
+                <img src="images/button-dot-green-outline.png" class="button_dot" >
+                <img src="images/button-dot-green-bg.png" class="button_dot">
+                <img src="images/button-dot-green-outline.png" class="button_dot" >
+            </div>
+         <div id="signup2_form" data-role="validator" novalidate="novalidate">
+            <form>
+                <table  >
+                   <tr>
+                       <td>
+                            <p>
+                                ชื่อ
+                            </p>
+                        </td>
+                       <td>
+                          <input id="signupfirstname" name="signupfirstname" class="form_reg" data-bind="value: reigisterModel.fields.firstname"  type="text" required validationMessage="***">
+                         <span class="k-invalid-msg" data-for="signupfirstname"></span>
+                       </td>
+                   </tr>
+                   <tr>
+                        <td colspan="2"  >
+                            <img  src="images/pic-green-line.jpg" class="fromsline" />
+                        </td>
+                   </tr>
+                     <tr>
+                       <td>
+                            <p>
+                               นามสกุล
+                            </p>    
+                        </td>
+                       <td>
+                          <input id="signuplastname" name="signuplastname" class="form_reg" data-bind="value: reigisterModel.fields.lastname"  type="text" required validationMessage="***">
+                             <span class="k-invalid-msg" data-for="signuplastname"></span>
+                       </td>
+                   </tr>
+                   <tr>
+                        <td colspan="2"  >
+                            <img  src="images/pic-green-line.jpg" class="fromsline" />
+                        </td>
+                   </tr>
+                     <tr>
+                       <td>
+                            <p>
+                               เบอร์โทรศัพท์
+                            </p>
+                        </td>
+                     <td>
+                         <input id="signupmobile" name="signupmobile" class="form_reg" data-bind="value: reigisterModel.fields.mobile"  type="tel" required validationMessage="***">
+                         <span class="k-invalid-msg" data-for="signupmobile"></span>
+                     </td>
+                   </tr>
+                   <tr>
+                        <td colspan="2"  >
+                            <img  src="images/pic-green-line.jpg" class="fromsline" />
+                        </td>
+                   </tr>
+                    
+                     <tr>
+                       <td>
+                            <p>
+                              หมายเลขบัตรประชาชน
+                            </p>
+                        </td>
+                     <td>
+                        <input id="signupcitizenid" name="signupcitizenid"  class="form_reg" data-bind="value: reigisterModel.fields.citizenid" type="number" required validationMessage="***">
+                         <span class="k-invalid-msg" data-for="signupcitizenid"></span>
+                     </td>
+                   </tr>
+                   <tr>
+                        <td colspan="2"  >
+                            <img  src="images/pic-green-line.jpg" class="fromsline" />
+                        </td>
+                   </tr>
+               </table>
+
+            </form>
+                      <div class="button-group bottom_position">
+                <a class="primary" data-role="button" data-bind="events: { click: reigisterModel.submit }" >ถัดไป</a>
+                <a  class="primary2"data-role="button" data-bind="events: { click: reigisterModel.toggleView }"  >ย้อนกลับ</a>
+                     </div>
+         </div>
+       </div>
+        
+        <div id="reigisterModel2logo" >
+        <img src="images/icon-user-large.png"  class="logo_reigister" >
+       </div>
+       
+    </div>
      
 </div>

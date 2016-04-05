@@ -228,6 +228,7 @@
     background-size: 100% 100%;
     border-color: transparent;
     font-family: 'sukhumvitreg', arial, sans-serif;
+    color: #fff;
 }
 
 #kendoUiMobileApp.km-nova .button-group .km-button.primary {
@@ -360,6 +361,9 @@
     font-weight: bold;
     font-size: 1.7em;  
 }
+.h3{
+        font-size: 2em;  
+}
 
 p {
    font-family: 'sukhumvitreg', arial, sans-serif;
@@ -385,7 +389,8 @@ span{
 }
 
 .form_reg {
-    font-size: 18;
+    font-size: 1em;
+    width:80%;
     /*color: #ffffff;*/
 }
 
@@ -415,6 +420,12 @@ span{
     width: auto;
     background-color: #fff;
 }
+.divmain_welcome{
+    margin:1em 0em 0em 0em;
+    height:90vh;
+    width: auto;
+    background-color: #fff;
+}
 .bgcolor{
     background-color: #fff;
 }
@@ -430,6 +441,12 @@ span{
     width: 33%; 
     height: auto;
 }
+.fromsline{
+    margin:0px auto;
+    display:block;
+    width: 95%; 
+    height: auto;
+}
 .logo_reigister{
     margin:1em auto 0em auto;
     display:block;
@@ -439,15 +456,41 @@ span{
     top: 0%; 
     left: 32%;
 }
+.logo_welcome{
+    position: absolute; 
+    top: 0%; 
+    left: 32%;
+    margin:2em auto 0em auto;
+    display:block;
+    width: 33%; 
+    height: auto;
+}
 .div_dot{
     margin:6em auto 0px auto;
     display:block;
     width: 60px;
 }
-    .button_dot{
+.drawerwidth{
+    width: 25%;
+}
+.drawermenu{
+    height:100vh;
+    width: 100%;
+    background-color: #00e676;
+}
+.drawercontainer{
+    width: 100%;
+    margin:-0.25em auto 0em auto;
+}
+.drawericon{
+    margin:1em 1em;
+    width: 3em;
+    height:auto;
+}
+.button_dot{
         width: 1em; 
         height: auto;
-    }
+}
 .from_table_signin{
     width: 75%;
     margin:4em auto 0em auto;
@@ -500,6 +543,15 @@ span.k-widget.k-tooltip-validation {
     left: 20%; 
     width:80%;
 }
+.thankyou{
+    margin-top: 4em;
+}
+.bottom_position{
+    position: absolute; 
+    bottom: 1px; 
+  
+    width:95%;
+}
 
 
 .clock { position: absolute; top: 280px; left: 40vw; }
@@ -528,6 +580,9 @@ span.k-widget.k-tooltip-validation {
     .logo_reigister{
         left: 30%;
     }
+    .logo_welcome{
+        left: 33%;
+    }
     .div_dot{
     margin:8em auto 0px auto;        
     }
@@ -537,6 +592,9 @@ span.k-widget.k-tooltip-validation {
     }
     .h2{
         font-weight: bold;
+        font-size: 2em;  
+    }
+    .h3{
         font-size: 2em;  
     }
     .datarootbottom{
