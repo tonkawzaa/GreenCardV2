@@ -364,6 +364,10 @@
 .h3{
         font-size: 2em;  
 }
+.h4{
+    font-weight: bold;
+    font-size: 1.3em; 
+}
 
 p {
    font-family: 'sukhumvitreg', arial, sans-serif;
@@ -393,7 +397,10 @@ span{
     width:80%;
     /*color: #ffffff;*/
 }
-
+.point{
+    font-size: 1.5em;
+    color: #fff;
+}
 
 .bt_proid
 {
@@ -421,8 +428,14 @@ span{
     background-color: #fff;
 }
 .divmain_welcome{
-    margin:1em 0em 0em 0em;
+    margin:2em 0em 0em 0em;
     height:90vh;
+    width: auto;
+    background-color: #fff;
+}
+.divmain_BIE{
+    margin:5em 1em 3em 1em;
+    height:75vh;
     width: auto;
     background-color: #fff;
 }
@@ -465,8 +478,31 @@ span{
     width: 33%; 
     height: auto;
 }
+.icon_welcome{
+    width: 45%;
+    margin:2em auto 0em auto;
+}
+.BIElogodiv{
+    position: absolute; 
+    top: 7%; 
+    left: 0%;
+    margin:0em 1em 0em 1em;
+}
+.BIElogoimg{
+    width:100%;
+}
+.BIElogo_tdleft
+{
+    width:28%;
+}
+.BIElogo_tdcenter{
+    width:44%;
+}
+.BIElogo_tdright{
+    width:28%;
+}
 .div_dot{
-    margin:6em auto 0px auto;
+    margin:6em auto 1em auto;
     display:block;
     width: 60px;
 }
@@ -483,8 +519,8 @@ span{
     margin:-0.25em auto 0em auto;
 }
 .drawericon{
-    margin:1em 1em;
-    width: 3em;
+    margin:0.8em 0.8em 0em 0em;
+    width: 2.8em;
     height:auto;
 }
 .button_dot{
@@ -503,6 +539,9 @@ span{
 }
 .right{
     float:right;
+}
+.left{
+    float:left;
 }
 .center{
     margin:0em auto 0em auto;
@@ -546,6 +585,9 @@ span.k-widget.k-tooltip-validation {
 .thankyou{
     margin-top: 4em;
 }
+.welcome{
+    margin-top: 4em;
+}
 .bottom_position{
     position: absolute; 
     bottom: 1px; 
@@ -577,11 +619,23 @@ span.k-widget.k-tooltip-validation {
         margin:8em 1em ;
         height:82vh;        
     }
+    .divmain_welcome{
+        margin:4em 0em 0em 0em;
+        height:85vh;
+    }
+    .divmain_BIE{
+        margin:5em 1em 3em 1em;
+        height:80vh;
+
+    }
     .logo_reigister{
         left: 30%;
     }
     .logo_welcome{
         left: 33%;
+    }
+    .welcome{
+    margin-top: 5em;
     }
     .div_dot{
     margin:8em auto 0px auto;        
@@ -596,6 +650,10 @@ span.k-widget.k-tooltip-validation {
     }
     .h3{
         font-size: 2em;  
+    }
+    .h4{
+        
+        font-size: 1.7em;  
     }
     .datarootbottom{
         left: 30%; 

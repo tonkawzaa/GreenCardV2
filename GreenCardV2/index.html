@@ -14,6 +14,7 @@
 </head>
 
 <body id="kendoUiMobileApp">
+    <script src="components/information/index.js"></script>
     <script src="components/welcome/index.js"></script>
     <script src="components/reigister/index.js"></script>
     <script src="components/homeView/index.js"></script>
@@ -48,7 +49,7 @@
             <img src="imagesDrawer/05-howto.jpg" class="drawercontainer"> 
             <img src="imagesDrawer/06-news.jpg" class="drawercontainer"> 
             <img src="imagesDrawer/07-setting.jpg" class="drawercontainer"> 
-            <img src="imagesDrawer/08-log-out.jpg" class="drawercontainer"> 
+            <img id="Drawer_logout" src="imagesDrawer/08-log-out.jpg" data-bind="events: { click: welcomeModel.logout }" class="drawercontainer"> 
         </div>
     </div>
     <!-- START_CUSTOM_CODE_kendoUiMobileApp -->

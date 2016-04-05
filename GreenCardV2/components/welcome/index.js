@@ -48,9 +48,9 @@ app.welcome = kendo.observable({
             //localStorage.removeItem(token);
             localStorage.clear();
             
-        	token = localStorage.getItem("token");
-            navigator.notification.alert(token);
-            app.mobileApp.navigate('components/home/view.html');
+        	//token = localStorage.getItem("token");
+            //navigator.notification.alert(token);
+            app.mobileApp.navigate('components/homeView/view.html');
         },
         showtoken: function() {
             //localStorage.removeItem(token);

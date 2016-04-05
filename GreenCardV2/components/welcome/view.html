@@ -1,8 +1,46 @@
-<div data-role="view" data-title="" data-layout="main" data-model="app.reigister" data-show="app.reigister.onShow" data-after-show="app.reigister.afterShow" >
-<a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left">
+<div data-role="view" data-title="" data-layout="main" data-model="app.welcome" data-show="app.welcome.onShow" data-after-show="app.welcome.afterShow" >
+<a id="Drawer_welcomeModel" data-role="button" href="#appDrawer" data-rel="drawer" data-align="left">
     <img src="imagesDrawer/icon-menu.png" class="drawericon" >
 </a>
     <div id="welcomeModel" class="divmain_welcome clock-container">
+        <table></table>
+        <span class="message h4 center welcome">
+              ยินดีต้อนรับเข้าสู่
+          </span>
+          <span class="message h4 center">
+              กรีนการ์ดแอปพลิเคชัน
+          </span>
+        
+        <table id="table_welcomeModel" >
+            <tr>
+                <td class="bt_proid">
+                    <img src="components/welcome/images/pic-home-icon01.png" class="icon_welcome" data-bind="events: { click: welcomeModel.information }"  >
+                    <span class="message h4 center">
+                        ฉลาดซื้อฉลาดเลือก
+                    </span>
+                </td>
+                <td class="bt_proid">
+                    <img src="components/welcome/images/pic-home-icon02.png" class="icon_welcome"   >
+                    <span class="message h4 center">
+                        สะสมคะแนน
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="bt_proid">
+                    <img src="components/welcome/images/pic-home-icon03.png" class="icon_welcome"  >
+                    <span class="message h4 center">
+                        รับสิทธิ์
+                    </span>
+                </td>
+                <td class="bt_proid">
+                    <img src="components/welcome/images/pic-home-icon04.png" class="icon_welcome"   >
+                    <span class="message h4 center">
+                        วิธีการใช้
+                    </span>
+                </td>
+            </tr>
+        </table>
     </div>
     <div id="welcomeModellogo" >
         <img src="components/welcome/images/icon-home.png"  class="logo_welcome" >
