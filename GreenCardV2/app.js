@@ -16,7 +16,7 @@
             if(token != null){
             	page_start = 'components/welcome/view.html';
             }else{
-               	page_start = 'components/home/view.html';
+               	page_start = 'components/homeView/view.html';
                    // page_start = 'components/earnbyid/view.html';
              };
             

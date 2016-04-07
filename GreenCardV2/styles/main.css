@@ -368,6 +368,9 @@
     font-weight: bold;
     font-size: 1.3em; 
 }
+.h5{
+    font-size: 1.1em; 
+}
 
 p {
    font-family: 'sukhumvitreg', arial, sans-serif;
@@ -493,13 +496,13 @@ span{
 }
 .BIElogo_tdleft
 {
-    width:28%;
+    width:29%;
 }
 .BIElogo_tdcenter{
-    width:44%;
+    width:42%;
 }
 .BIElogo_tdright{
-    width:28%;
+    width:29%;
 }
 .div_dot{
     margin:6em auto 1em auto;
@@ -624,8 +627,8 @@ span.k-widget.k-tooltip-validation {
         height:85vh;
     }
     .divmain_BIE{
-        margin:5em 1em 3em 1em;
-        height:80vh;
+        margin:9em 1em 3em 1em;
+        height:73vh;
 
     }
     .logo_reigister{
@@ -654,6 +657,9 @@ span.k-widget.k-tooltip-validation {
     .h4{
         
         font-size: 1.7em;  
+    }
+    .h5{
+        font-size: 1.4em; 
     }
     .datarootbottom{
         left: 30%; 

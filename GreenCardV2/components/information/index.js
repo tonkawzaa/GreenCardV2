@@ -55,17 +55,17 @@ app.information = kendo.observable({
     var informationModel = kendo.observable({
        
         information: function() {
-				app.mobileApp.navigate('components/information/view.html');
+            //navigator.notification.alert("information");
+				//app.mobileApp.navigate('components/information/view.html');
+            app.mobileApp.navigate('components/welcome/view.html');
         },
-         earn: function() {       	
-				app.mobileApp.navigate('components/earn/view.html');
+         earn: function() {   
+             navigator.notification.alert("earn");
+				//app.mobileApp.navigate('components/earn/view.html');
         }, 
         burnPoint: function() {
-				app.mobileApp.navigate('components/burnPoint/view.html');
-        },
-  
-         destroyListView: function() {	
-            	navigator.notification.alert("destroyListView");
+            navigator.notification.alert("burnPoint");
+				//app.mobileApp.navigate('components/burnPoint/view.html');
         },
        
     });

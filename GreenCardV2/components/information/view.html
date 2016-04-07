@@ -1,12 +1,15 @@
-<div data-role="view" data-title="" data-layout="main" data-model="app.information" data-show="app.information.onShow" data-after-show="app.information.afterShow" >
+<div data-role="view" data-title="" data-reload="true" data-layout="main-nonav" data-model="app.information" data-show="app.information.onShow" data-after-show="app.information.afterShow" >
+
     <div id = "headerinformation">
         <table class="message tdwidth">
             <tr>
+                
                 <td class="left">
-                    <a id="Drawer_welcomeModel" data-role="button" href="#appDrawer" data-rel="drawer" data-align="left">
+                    <a id="Drawer_information" data-role="button" href="#appDrawer" data-rel="drawer" data-align="left">
                         <img src="imagesDrawer/icon-menu.png" class="drawericon" >
                     </a>
                 </td>
+                
                 <td class="right">
                     <span class="point"> คะแนนสะสม  <br></span>
                     <span  class="point" data-bind="text: data" ></span>
@@ -14,23 +17,40 @@
             </tr>
         </table>
     </div>
-    <div id="information_divmain" class="divmain_BIE clock-container">
+
+
+    <div  id="information_divmain_BIE" class="divmain_BIE clock-container " >
         <table></table>
+        
+        
     </div>
-    <div id="information_BIElogo" class="BIElogodiv">
-        <table border="1">
+   
+       <div id="information_BIElogodiv" class="BIElogodiv">
+
+            <table >
             <tr>
                 <td class="BIElogo_tdleft">
-                    <img src="components/welcome/images/pic-home-icon02.png" class="BIElogoimg" >
+                    <img src="images/icon-earn-point.png" class="BIElogoimg" data-bind="events: { click: informationModel.information }"  >
+                    <span class="center message h5">
+                        สะสมคะแนน
+                    </span>
                 </td>
                 <td style="BIElogo_tdcenter">
-                    <img src="components/welcome/images/pic-home-icon01.png" class="BIElogoimg" >
+                    <img src="images/icon-point.png" class="BIElogoimg" data-bind="events: { click: informationModel.earn }" >
+                    <span class="center message h4">
+                        ฉลาดซื้อฉลาดเลือก
+                    </span>
                 </td>
                 <td class="BIElogo_tdright">
-                    <img src="components/welcome/images/pic-home-icon03.png" class="BIElogoimg">
+                    <img src="images/icon-burn-point.png" class="BIElogoimg" data-bind="events: { click: informationModel.burnPoint }">
+                    <span class="center message h5">
+                        รับสิทธิ์
+                    </span>
                 </td>
             </tr>
         </table>
-    </div>
+       
+        </div>
+
     
 </div>
